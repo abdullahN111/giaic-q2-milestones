@@ -1,0 +1,54 @@
+.aboutMain {
+  min-height: 100vh;
+  background-color: rgb(248 250 252 / 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+
+.aboutContainer {
+  max-width: 42rem;
+  margin: auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.aboutPara {
+  color: rgb(55 65 81 / 1);
+  line-height: 1.5;
+}
+
+.emailBtn{
+  margin-top: 1.5rem;
+  color: rgb(75 85 99 / 1);
+}
+
+.emailBtn a{
+ text-decoration: none;
+}
+
+.contactPageBtn{
+  margin-top: 0.25rem;
+  color: rgb(75 85 99 / 1);
+}
+
+.contactBtn{
+  color: rgb(37 99 235 / 1);
+}
+.contactBtn:hover{
+  color: rgba(37, 100, 235, 0.928);
+  text-decoration: underline;
+}
+
+.contactPageBtn a{
+  text-decoration: none;
+}
+
+@media (min-width: 500px) {
+  .aboutMain {
+    padding-bottom: 2.5rem;
+  }
+}

@@ -1,0 +1,201 @@
+.header {
+  background-color: rgba(27, 22, 22, 0.7);
+  color: white;
+  height: 87px;
+  display: flex;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.headerContainer {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.brandContainer {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.brandContainer Link {
+  text-decoration: none;
+  color: white;
+}
+
+.brandName {
+  font-weight: 500;
+}
+
+.brandName span {
+  color: rgb(238, 29, 71);
+  font-weight: 650;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.itemsContainer {
+  display: flex;
+}
+
+.items {
+  list-style: none;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  font-size: 0.91rem;
+  font-weight: 300;
+}
+
+.items:hover {
+  color: rgb(238, 29, 71);
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.searchContainer i {
+  font-size: 1.2rem;
+}
+
+.searchContainer i:hover {
+  font-size: 1.3rem;
+  color: rgb(238, 29, 71);
+  cursor: pointer;
+}
+
+.input {
+  padding: 7px 4px;
+  border: none;
+  border-radius: 5px;
+}
+
+.sidebar {
+  position: relative;
+  border-radius: 0.4rem;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  border: 0.1rem solid rgba(242, 103, 117, 0.508);
+  display: none;
+}
+.sidebar:hover {
+  background-color: rgba(43, 42, 42, 0.493);
+}
+
+.sidebar label:hover {
+  cursor: pointer;
+}
+
+.fa-navicon {
+  color: white;
+}
+
+.sidebarContainer {
+  position: fixed;
+  inset: 0px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  background-color: black;
+}
+
+.sidebarLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.sidebarLinks Link {
+  text-decoration: none;
+}
+
+.sidebarLinks > :not([hidden]) ~ :not([hidden]) {
+  margin-top: calc(2rem * (1 - 0));
+  margin-bottom: calc(2rem * 0);
+}
+
+.sidebarCloseBtn {
+  color: white;
+}
+
+.sidebarCloseBtn:hover {
+  cursor: pointer;
+  color: rgba(238, 29, 71);
+}
+
+.sidebarCloseBtn:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.links {
+  color: white;
+  list-style: none;
+}
+.links:hover {
+  color: rgb(238, 29, 71);
+}
+
+@media (min-width: 1024px) {
+  .sidebarBtnContainer {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+  }
+
+  .navbarBtn {
+    display: flex;
+  }
+  .sidebarContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 936px) {
+  .headerContainer {
+    padding: 0 2.5rem;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .sidebar {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .headerContainer {
+    overflow-x: hidden;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .headerContainer {
+    padding: 0 1.5rem;
+  }
+}

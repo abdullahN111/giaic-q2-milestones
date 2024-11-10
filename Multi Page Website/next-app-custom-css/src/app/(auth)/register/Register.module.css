@@ -1,0 +1,84 @@
+.formContainer {
+  max-width: 26rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  padding: 1.5rem;
+  border: 1px solid rgb(209 213 219 / 1);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.headingContainer {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.input {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  line-height: 1.5rem;
+}
+
+.input:focus {
+  border: none;
+  outline: none;
+}
+.input:focus::placeholder {
+  color: rgb(156 163 175 / 1);
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(156 163 175 / 1);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.eyeToggle {
+  display: flex;
+  justify-content: center;
+  right: 0.75rem;
+  cursor: pointer;
+}
+
+.registerBtn {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: white;
+  background-color: rgb(22 163 74 / 1);
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.75rem;
+  margin-top: 2rem;
+}
+
+.registerBtn:hover {
+  cursor: pointer;
+  background-color: rgb(21 128 61 / 1);
+}
+
+.btnMain {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+}
+
+@media (min-width: 500px) {
+  .formContainer {
+    margin-bottom: 3rem;
+  }
+}

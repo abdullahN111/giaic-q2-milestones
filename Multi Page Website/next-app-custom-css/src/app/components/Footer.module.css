@@ -1,0 +1,25 @@
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    color: white;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+}
+
+.footerPara{
+    font-size: 14px;
+}
+
+
+@media (min-width: 500px) {
+    .footerContainer {
+        height: 3.5rem;
+        position: fixed;
+    }
+    .footerPara{
+        font-size: 15px;
+    }
+}

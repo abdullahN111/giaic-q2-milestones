@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Dynamic Resume Builder with Form</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="resume-brand">
+        <a href="#">
+          <span class="resume-brand-name">Resume <span>Abd.</span></span>
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar-content">
+          <a href="#">
+            <li class="items">Home</li>
+          </a>
+          <a href="#">
+            <li class="items">About</li>
+          </a>
+          <a href="#">
+            <li class="items">Support</li>
+          </a>
+        </ul>
+      </nav>
+      <div class="button-btn">
+        <button class="resume-btn">Start Creating</button>
+      </div>
+    </header>
+    <form class="main" id="main-form">
+      <section class="section">
+        <div class="section-heading info-heading">
+          <h2>Personal Information</h2>
+        </div>
+        <div class="section-inputs-container">
+          <div class="section-inputs">
+            <label for="" class="form-label">First Name</label>
+            <input
+              name="firstname"
+              type="text"
+              class="form-control firstname"
+              placeholder="e.g. Abdullah"
+              required
+            />
+          </div>
+          <div class="section-inputs">
+            <label for="" class="form-label">Last Name</label>
+            <input
+              name="lastname"
+              type="text"
+              class="form-control lastname"
+              placeholder="e.g. Nadeem"
+              required
+            />
+          </div>
+          <div class="section-inputs">
+            <label for="" class="form-label">Your Image</label>
+            <input
+              name="image"
+              type="file"
+              class="form-control image"
+              accept="image/*"
+              required
+            />
+          </div>
+          <div class="section-inputs">
+            <label for="" class="form-label">Designation</label>
+            <input
+              name="designation"
+              type="text"
+              class="form-control designation"
+              placeholder="e.g. Sr.Accountant"
+              required
+            />
+          </div>
+          <div class="section-inputs">
+            <label for="" class="form-label">Address</label>
+            <input
+              name="address"
+              type="text"
+              class="form-control address"
+              placeholder="e.g. Gulistan e Jouhar Block-2"
+            />
+          </div>
+          <div class="section-inputs">
+            <label for="" class="form-label">Email</label>
+            <input
+              name="email"
+              type="email"
+              class="form-control email"
+              placeholder="e.g. example@gmail.com"
+              required
+            />
+          </div>
+          <div class="section-inputs">
+            <label for="" class="form-label">Phone</label>
+            <input
+              name="phone"
+              type="text"
+              class="form-control phone"
+              placeholder="e.g. 92 3123 6464 55"
+              required
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section" id="education-section">
+        <div class="section-heading">
+          <h2>Qualifications</h2>
+        </div>
+        <div id="add-edu-section">
+          
+
+          <div class="section-inputs-container">
+            <div class="section-inputs">
+              <label for="institute" class="form-label">Institute</label>
+              <input
+                id="institute"
+                name="institute"
+                type="text"
+                class="form-control institute"
+                placeholder="e.g. University of Karachi"
+                required
+              />
+            </div>
+            <div class="section-inputs">
+              <label for="degree" class="form-label">Degree</label>
+              <input
+                id="degree"
+                name="degree"
+                type="text"
+                class="form-control degree"
+                placeholder="e.g. Bachelor's in Computer Science"
+                required
+              />
+            </div>
+            <div class="section-inputs">
+              <label for="dateofcompletion" class="form-label"
+                >Date of Completion</label
+              >
+              <input
+                id="dateofcompletion"
+                name="dateofcompletion"
+                type="date"
+                class="form-control dateofcompletion"
+                required
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="add-container">
+        <button type="button" class="add-btn" id="edu-add-btn">+</button>
+      </div>
+      <section class="section" id="experience-section">
+        <div class="section-heading">
+          <h2>Experience</h2>
+        </div>
+        <div id="add-exp-section">
+          
+          <div class="section-inputs-container">
+            <div class="section-inputs">
+              <label for="organization" class="form-label">Organization</label>
+              <input
+                id="organization"
+                name="organization"
+                type="text"
+                class="form-control organization"
+                placeholder="e.g. Avanza Solutions"
+                required
+              />
+            </div>
+            <div class="section-inputs">
+              <label for="jobrole" class="form-label">Job Title</label>
+              <input
+                id="jobrole"
+                name="jobrole"
+                type="text"
+                class="form-control jobrole"
+                placeholder="e.g. Software Engineer"
+                required
+              />
+            </div>
+            <div class="section-inputs">
+              <label for="startdate" class="form-label">Start Date</label>
+              <input
+                id="startdate"
+                name="startdate"
+                type="date"
+                class="form-control startdate"
+                required
+              />
+            </div>
+            <div class="section-inputs">
+              <label for="enddate" class="form-label">End Date</label>
+              <input
+                id="enddate"
+                name="enddate"
+                type="date"
+                class="form-control enddate"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="add-container">
+        <button type="button" class="add-btn" id="exp-add-btn">+</button>
+      </div>
+      <section class="section">
+        <div class="section-heading">
+          <h2>Skills</h2>
+        </div>
+        <div id="add-skills-section">
+         
+
+          <div class="section-inputs-container">
+            <div class="section-inputs">
+              <input
+                id="skill"
+                name="skill"
+                type="text"
+                class="form-control skill"
+                placeholder="e.g. Java"
+              />
+            </div>
+            <div class="section-inputs">
+              <input
+                id="skill"
+                name="skill"
+                type="text"
+                class="form-control skill"
+                placeholder="e.g. C++"
+              />
+            </div>
+            <div class="section-inputs">
+              <input
+                id="skill"
+                name="skill"
+                type="text"
+                class="form-control skill"
+                placeholder="e.g. Angular"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="add-container">
+        <button type="button" class="add-btn" id="skill-add-btn">+</button>
+      </div>
+    </form>
+
+    <div class="button-btn">
+      <button class="down-btn">Create Resume</button>
+    </div>
+   
+    <section id = "preview-sc" class = "print_area">
+      <div class = "container">
+          <div class = "preview-cnt">
+              <div class = "preview-cnt-l text-white">
+                  <div class = "preview-blk">
+                      <div class = "preview-image">
+                          <img src = "" alt = "" id = "image_dsp"> 
+                      </div>
+                      <div class = "preview-item preview-item-name">
+                          <span class = "preview-item-val fw-6" id = "fullname_dsp"></span>
+                      </div>
+                      <div class = "preview-item">
+                          <span class = "preview-item-val" id = "designation_dsp"></span>
+                      </div>
+                  </div>
+
+                  <div class = "preview-blk">
+                      <div class = "preview-blk-title">
+                          <h3>about</h3>
+                      </div>
+                      <div class = "preview-blk-list">
+                          <div class = "preview-item">
+                              <span class = "preview-item-val" id = "phoneno_dsp"></span>
+                          </div>
+                          <div class = "preview-item">
+                              <span class = "preview-item-val" id = "email_dsp"></span>
+                          </div>
+                          <div class = "preview-item">
+                              <span class = "preview-item-val" id = "address_dsp"></span>
+                          </div>
+                          
+                      </div>
+                  </div>
+
+                  <div class = "preview-blk">
+                      <div class = "preview-blk-title">
+                          <h3>skills</h3>
+                      </div>
+                      <div class = "skills-items preview-blk-list" id = "skills_dsp">
+                          <!-- skills list here -->
+                      </div>
+                  </div>
+              </div>
+
+              <div class = "preview-cnt-r bg-white">
+                  
+                  <div class = "preview-blk">
+                      <div class = "preview-blk-title">
+                          <h3>educations</h3>
+                      </div>
+                      <div class = "educations-items preview-blk-list" id = "educations_dsp"></div>
+                  </div>
+                  <div class = "preview-blk">
+                      <div class = "preview-blk-title">
+                          <h3>experiences</h3>
+                      </div>
+                      <div class = "experiences-items preview-blk-list" id = "experiences_dsp"></div>
+                  </div>
+
+
+                
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class = "print-btn-sc">
+      <div class = "container-btn">
+          <button type = "button" class = "print-btn down-btn">Download Resume</button>
+      </div>
+  </section>
+  <footer class="footer">
+    <p class="trademark">Copyright &copy; Resume<span> Abd.</span></p>
+  </footer>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+.projectsSection {
+  color: white;
+}
+
+.projectsContainer {
+    margin: 5rem auto;
+  padding: 5rem 2rem; /* Adjusts padding on left and right */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsMain {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; 
+}
+
+.projectsHeading {
+  font-size: 1.3rem;
+}
+
+.projectsHeading h2 span {
+  color: rgb(238, 29, 71);
+}
+
+.projectsCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+}
+
+.projectCard:nth-child(3) {
+  grid-column: 1 / -1;
+}
+.projectCard {
+  width: 100%;
+  display: flex;
+  gap: 2.3rem;
+  margin: 2rem 0;
+  flex-direction: column;
+}
+
+.projectsContainer {
+  font-size: 0.94rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.815);
+}
+
+.projectCard h3 {
+  font-size: 18px;
+}
+
+.projectImg img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+@media (max-width: 936px) {
+    .projectsContainer {
+
+      padding: 4rem 5rem; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .projectsMain {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px; 
+    }
+  .projectsCards {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .projectsHeading {
+    font-size: 1.1rem;
+  }
+
+  .projectCard h3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 520px) {
+    .projectsContainer {
+
+        padding: 4rem 3rem; 
+      }
+  .projectsCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .projectsHeading {
+    font-size: 1rem;
+    padding: 0rem 2rem;
+    padding-top: 2rem;
+  }
+
+  .projectCard h3 {
+    font-size: 16px;
+  }
+
+  .projectCard {
+    display: flex;
+    gap: 1rem;
+    margin: 1.2rem 0;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 360px) {
+    .projectsContainer {
+
+        padding: 4rem 2rem; 
+      }
+  .projectCard h3 {
+    font-size: 15px;
+  }
+}

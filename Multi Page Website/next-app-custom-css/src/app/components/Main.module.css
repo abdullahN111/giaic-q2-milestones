@@ -1,0 +1,35 @@
+.mainContainer {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mainContent {
+  max-width: 72rem;
+  margin: auto;
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(75 85 99 / 1);
+  border-radius: 0.5rem;
+}
+
+.mainHeading {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.mainPara {
+  color: rgb(55 65 81 / 1);
+  line-height: 1.5;
+}
+
+@media (min-width: 500px) {
+  .mainContainer {
+    padding-bottom: 2.5rem;
+  }
+}
