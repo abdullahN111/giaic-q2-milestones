@@ -58,10 +58,10 @@ const Header = () => {
                 <Link href="/about" onClick={toggleSidebar}>
                   <li className={Styles.links}>About</li>
                 </Link>
-                <Link href="/blogs" onClick={toggleSidebar}>
-                  <li className={Styles.links}>Blogs</li>
+                <Link href="/projects" onClick={toggleSidebar}>
+                  <li className={Styles.links}>Projects</li>
                 </Link>
-                <Link href="/contactus" onClick={toggleSidebar}>
+                <Link href="/contact" onClick={toggleSidebar}>
                   <li className={Styles.links}>Contact Us</li>
                 </Link>
               </div>

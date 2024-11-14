@@ -1,0 +1,82 @@
+.aboutSection {
+  color: white;
+  background-color: rgb(27, 22, 22);
+}
+
+.aboutContainer {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 7rem auto;
+  padding: 6rem 10rem;
+}
+
+.aboutMain {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aboutMain h1 {
+  font-size: 2rem;
+}
+
+.aboutMain h1 span {
+  color: rgb(238, 29, 71);
+}
+
+.aboutMain p {
+  font-size: 1.07rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.815);
+}
+
+.aboutMain a {
+  text-align: center;
+  background-color: rgb(238, 29, 71);
+  font-size: 1rem;
+  width: fit-content;
+  padding: 10px 18px;
+  border-radius: 3px;
+  transition: background-color 500ms, border 500ms;
+}
+
+.aboutMain a:hover {
+  cursor: pointer;
+  background-color: rgb(27, 22, 22);
+  border: 1px solid rgb(238, 29, 71);
+}
+
+
+@media (max-width: 936px) {
+    .aboutContainer {
+        margin: 6rem auto;
+        padding: 5rem 6rem;
+      }
+      
+}
+@media (max-width: 520px) {
+    .aboutContainer {
+        margin: 5rem auto;
+        padding: 4rem 4rem;
+      }
+
+      .aboutMain h1 {
+        font-size: 1.8rem;
+      }
+ 
+      
+      .aboutMain p {
+        font-size: 0.94rem;
+
+      }
+      
+}
+@media (max-width: 460px) {
+    .aboutContainer {
+        padding: 4rem 2rem;
+      }
+      
+}

@@ -1,11 +1,11 @@
-import Styles from './Projects.module.css'
-import BtnMain from '../components/BtnMain'
-import React from 'react'
+import Styles from "./Projects.module.css";
+import BtnMain from "../components/BtnMain";
+import React from "react";
 
 const page = () => {
   return (
     <section className={Styles.projectsSection}>
-        <div className={Styles.projectsContainer}>
+      <div className={Styles.projectsContainer}>
         <div className={Styles.projectsMain}>
           <div className={Styles.projectsHeading}>
             <h2>
@@ -21,8 +21,18 @@ const page = () => {
               >
                 <img src="/assets/images/project1.jpg" alt="Resume Abd" />
               </a>
-              <p>A comprehensive resume builder tool that helps users craft professional resumes effortlessly, featuring customizable templates, guided sections, and styling options to make an impactful impression.</p>
-              <BtnMain label="Resume Abd" />
+              <p>
+                A comprehensive resume builder tool that helps users craft
+                professional resumes effortlessly, featuring customizable
+                templates, guided sections, and styling options to make an
+                impactful impression.
+              </p>
+              <a
+                href="https://resumeabd.vercel.app/"
+                className={Styles.projectBtn}
+              >
+                <BtnMain label="Resume Abd" />
+              </a>
             </div>
             <div className={Styles.projectCard}>
               <h3>My Best Work</h3>
@@ -32,8 +42,18 @@ const page = () => {
               >
                 <img src="/assets/images/303delivery.png" alt="303 Delivery" />
               </a>
-              <p>A dynamic food delivery platform connecting users with local restaurants and diverse cuisine options, streamlining the ordering process to provide a quick, reliable, and enjoyable dining experience at home.</p>
-              <BtnMain label="303 Delivery" />
+              <p>
+                A dynamic food delivery platform connecting users with local
+                restaurants and diverse cuisine options, streamlining the
+                ordering process to provide a quick, reliable, and enjoyable
+                dining experience at home.
+              </p>
+              <a
+                href="https://303delivery.vercel.app/"
+                className={Styles.projectBtn}
+              >
+                <BtnMain label="303 Delivery" />
+              </a>
             </div>
             <div className={Styles.projectCard}>
               <h3>My Best Work</h3>
@@ -43,14 +63,24 @@ const page = () => {
               >
                 <img src="/assets/images/blogabd.png" alt="Blog Abd" />
               </a>
-              <p>A personal blog created by Muhammad Abdullah to share insights, knowledge, and updates on topics like technology, development, and career advice, offering readers valuable information and inspiration.</p>
-              <BtnMain label="Blog Abd" />
+              <p>
+                A personal blog created by Muhammad Abdullah to share insights,
+                knowledge, and updates on topics like technology, development,
+                and career advice, offering readers valuable information and
+                inspiration.
+              </p>
+              <a
+                href="https://blogabd-v1.vercel.app/"
+                className={Styles.projectBtn}
+              >
+                <BtnMain label="Blog Abd" />
+              </a>
             </div>
           </div>
         </div>
-        </div>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default page
+export default page;

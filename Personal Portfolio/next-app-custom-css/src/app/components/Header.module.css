@@ -90,11 +90,11 @@
   border-radius: 0.4rem;
   padding: 0.5rem 0.8rem;
   cursor: pointer;
-  border: 0.1rem solid rgba(242, 103, 117, 0.508);
+  border: 0.1rem solid #f2677582;
   display: none;
 }
 .sidebar:hover {
-  background-color: rgba(43, 42, 42, 0.493);
+  background-color: #2b2a2a7e;
 }
 
 .sidebar label:hover {
