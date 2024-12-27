@@ -1,16 +1,13 @@
-import Styles from './BtnMain.module.css'
+import Styles from "./BtnMain.module.css";
 
-const BtnMain = ({label = "Resume Abd."}) => {
+const BtnMain = ({ label = "" }) => {
   return (
-    <a
-    href="https://resumeabd.vercel.app/"
-    className={Styles.projectBtn}
-  >
-    <p className={`${Styles.btnMain} ${Styles.btnPrimary}`}>
+    <p
+      className={`${Styles.btnMain} ${Styles.btnPrimary} ${Styles.projectBtn}`}
+    >
       {label}
     </p>
-  </a>
-  )
-}
+  );
+};
 
-export default BtnMain
+export default BtnMain;

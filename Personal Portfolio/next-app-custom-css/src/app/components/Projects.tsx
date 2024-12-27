@@ -17,20 +17,28 @@ const Projects = () => {
               <a
                 href="https://resumeabd.vercel.app/"
                 className={Styles.projectImg}
+                target="_blank" rel="noopener noreferrer"
               >
                 <img src="/assets/images/project1.jpg" alt="Resume Abd" />
               </a>
-              <BtnMain label="Resume Abd" />
+              <a href="https://resumeabd.vercel.app/"
+              target="_blank" rel="noopener noreferrer">
+                <BtnMain label="Resume Abd" />
+              </a>
             </div>
             <div className={Styles.projectCard}>
               <h3>My Best Work</h3>
               <a
-                href="https://resumeabd.vercel.app/"
+                href="https://furniro-by-abd.vercel.app/"
                 className={Styles.projectImg}
+                target="_blank" rel="noopener noreferrer"
               >
-                <img src="/assets/images/project1.jpg" alt="Ecommerce Abd" />
+                <img src="/assets/images/furniro.jpg" alt="Furniro" />
               </a>
-              <BtnMain label="Ecommerce Abd" />
+              <a href="https://furniro-by-abd.vercel.app/"
+              target="_blank" rel="noopener noreferrer">
+                <BtnMain label="Furniro" />
+              </a>
             </div>
           </div>
         </div>

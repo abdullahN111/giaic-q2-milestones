@@ -12,7 +12,7 @@ function Header() {
 
   return (
     <header className="flex justify-between items-center h-[88px] bg-black text-white px-12">
-      {/* Logo */}
+  
       <div className="text-lg font-bold">
         <Link href="/" className="no-underline">
           <h3 className="text-white">
@@ -21,17 +21,8 @@ function Header() {
         </Link>
       </div>
 
-      {/* Sidebar Toggle Button for Small Screens */}
-      <div className="lg:hidden">
-        <button
-          onClick={toggleSidebar}
-          className="text-white bg-transparent text-[22px] border-none cursor-pointer"
-        >
-          ☰
-        </button>
-      </div>
 
-      {/* Navbar Links for Large Screens */}
+      {/* navbar links for large screens */}
       <nav className="hidden lg:flex items-center space-x-8 text-lg">
         <Link href="/" className="no-underline hover:text-fuchsia-300">
           Home
@@ -47,7 +38,7 @@ function Header() {
         </Link>
       </nav>
 
-      {/* Login and Register Buttons for Large Screens */}
+   
       <div className="hidden lg:flex items-center space-x-4">
         <Link href="./login" className="no-underline">
           <button className="bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded-lg text-white">
@@ -61,7 +52,15 @@ function Header() {
         </Link>
       </div>
 
-      {/* Sidebar for Small Screens */}
+      {/* sidebar for small Screens */}
+      <div className="lg:hidden">
+        <button
+          onClick={toggleSidebar}
+          className="text-white bg-transparent text-[22px] border-none cursor-pointer"
+        >
+          ☰
+        </button>
+      </div>
       {isSidebarOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 lg:hidden">
           <div className="flex flex-col items-center space-y-8 text-lg">

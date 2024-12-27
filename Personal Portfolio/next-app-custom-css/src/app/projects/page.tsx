@@ -18,61 +18,55 @@ const page = () => {
               <a
                 href="https://resumeabd.vercel.app/"
                 className={Styles.projectImg}
+                target="_blank" rel="noopener noreferrer"
               >
                 <img src="/assets/images/project1.jpg" alt="Resume Abd" />
               </a>
-              <p>
+              <p className={Styles.projectPara}>
                 A comprehensive resume builder tool that helps users craft
                 professional resumes effortlessly, featuring customizable
                 templates, guided sections, and styling options to make an
                 impactful impression.
               </p>
-              <a
-                href="https://resumeabd.vercel.app/"
-                className={Styles.projectBtn}
-              >
+              <a href="https://resumeabd.vercel.app/"
+              target="_blank" rel="noopener noreferrer">
                 <BtnMain label="Resume Abd" />
               </a>
             </div>
             <div className={Styles.projectCard}>
               <h3>My Best Work</h3>
               <a
-                href="https://303delivery.vercel.app/"
+                href="https://furniro-by-abd.vercel.app/"
                 className={Styles.projectImg}
+                target="_blank" rel="noopener noreferrer"
               >
-                <img src="/assets/images/303delivery.png" alt="303 Delivery" />
+                <img src="/assets/images/furniro.png" alt="Furniro" />
               </a>
-              <p>
-                A dynamic food delivery platform connecting users with local
-                restaurants and diverse cuisine options, streamlining the
-                ordering process to provide a quick, reliable, and enjoyable
-                dining experience at home.
+              <p className={Styles.projectPara}>
+              A sleek ecommerce furniture platform offering a curated selection of stylish and functional home furnishings, simplifying the shopping experience to deliver quality, comfort, and elegance directly to your living space.
               </p>
-              <a
-                href="https://303delivery.vercel.app/"
-                className={Styles.projectBtn}
-              >
-                <BtnMain label="303 Delivery" />
+              <a href="https://furniro-by-abd.vercel.app/"
+              target="_blank" rel="noopener noreferrer">
+                <BtnMain label="Furniro" />
               </a>
             </div>
             <div className={Styles.projectCard}>
               <h3>My Best Work</h3>
               <a
-                href="https://blogabd-v1.vercel.app/"
+                href="https://blogabd-v2.vercel.app/"
                 className={Styles.projectImg}
+                target="_blank" rel="noopener noreferrer"
               >
                 <img src="/assets/images/blogabd.png" alt="Blog Abd" />
               </a>
-              <p>
+              <p className={Styles.projectPara}>
                 A personal blog created by Muhammad Abdullah to share insights,
                 knowledge, and updates on topics like technology, development,
                 and career advice, offering readers valuable information and
                 inspiration.
               </p>
-              <a
-                href="https://blogabd-v1.vercel.app/"
-                className={Styles.projectBtn}
-              >
+              <a href="https://blogabd-v2.vercel.app/"
+              target="_blank" rel="noopener noreferrer">
                 <BtnMain label="Blog Abd" />
               </a>
             </div>

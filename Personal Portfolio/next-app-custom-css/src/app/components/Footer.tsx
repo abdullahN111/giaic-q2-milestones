@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -6,30 +7,30 @@ const Footer = () => {
       <div className={Styles.footerContainer}>
         <div className={Styles.footerMain}>
           <div className={Styles.footerLeft}>
-            <a href="">© Portfolio Abd.</a>
+            <Link href="/">© Portfolio Abd.</Link>
             <span>|</span>
-            <a href="">Home</a>
+            <Link href="/">Home</Link>
             <span>|</span>
-            <a href="">About</a>
+            <Link href="/about">About</Link>
             <span>|</span>
-            <a href="">Contact</a>
+            <Link href="/contact">Contact</Link>
           </div>
           <div className={Styles.footerRight}>
-            <a
+            <Link
               href="mailto:myselfabdullah360@gmail.com"
               className={Styles.footerItem}
             >
               <i className="fa material-icons">email</i>
-            </a>
-            <a href="https://www.linkedin.com/in/m-abdullah-nadeem/" className={Styles.footerItem}>
+            </Link>
+            <Link href="https://www.linkedin.com/in/m-abdullah-nadeem/" className={Styles.footerItem}>
               <i className="fa fa-linkedin-square"></i>
-            </a>
-            <a href="https://www.instagram.com/i_abdullahn/" className={Styles.footerItem}>
+            </Link>
+            <Link href="https://www.instagram.com/i_abdullahn/" className={Styles.footerItem}>
               <i className="fa fa-instagram"></i>
-            </a>
-            <a href="https://www.instagram.com/i_abdullahn/" className={Styles.footerItem}>
+            </Link>
+            <Link href="https://www.instagram.com/i_abdullahn/" className={Styles.footerItem}>
               <i className="fa fa-facebook-square"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

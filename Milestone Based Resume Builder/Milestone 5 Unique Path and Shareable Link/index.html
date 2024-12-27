@@ -16,19 +16,7 @@
           <span class="resume-brand-name">Resume <span>Abd.</span></span>
         </a>
       </div>
-      <nav class="navbar">
-        <ul class="navbar-content">
-          <a href="#">
-            <li class="items">Home</li>
-          </a>
-          <a href="#">
-            <li class="items">About</li>
-          </a>
-          <a href="#">
-            <li class="items">Support</li>
-          </a>
-        </ul>
-      </nav>
+
       <div class="button-btn">
         <button class="resume-btn">Start Creating</button>
       </div>
@@ -323,24 +311,26 @@
 
     <section class="print-btn-sc">
       <div class="container-btn">
-        <button type="button" class="print-btn down-btn" onclick="downloadPDF()">
+        <button
+          type="button"
+          class="print-btn down-btn"
+          onclick="downloadPDF()"
+        >
           Download Resume
         </button>
 
-
-<script>
-  function downloadPDF() {
-    const element = document.getElementById('preview-sc'); 
-    html2pdf(element, {
-      margin: 1,
-      filename: 'resume.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { scale: 2 },
-      jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-    });
-  }
-</script>
-
+        <script>
+          function downloadPDF() {
+            const element = document.getElementById("preview-sc");
+            html2pdf(element, {
+              margin: 1,
+              filename: "resume.pdf",
+              image: { type: "jpeg", quality: 0.98 },
+              html2canvas: { scale: 2 },
+              jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+            });
+          }
+        </script>
       </div>
     </section>
     <footer class="footer">
