@@ -33,7 +33,7 @@ const Projects = () => {
                 className={Styles.projectImg}
                 target="_blank" rel="noopener noreferrer"
               >
-                <img src="/assets/images/furniro.jpg" alt="Furniro" />
+                <img src="/assets/images/furniro.png" alt="Furniro" />
               </a>
               <a href="https://furniro-by-abd.vercel.app/"
               target="_blank" rel="noopener noreferrer">

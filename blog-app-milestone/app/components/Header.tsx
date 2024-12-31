@@ -10,7 +10,7 @@ const Header = () => {
             Abd<span className="text-primary">Blog</span>
             </Link>
         </div>
-        <nav className="flex space-x-5 font-semibold text-[17px]">
+        <nav className="hidden lg:flex space-x-5 font-semibold text-[17px]">
             <Link href='/' className="hover:text-primary">
             Home
             </Link>
