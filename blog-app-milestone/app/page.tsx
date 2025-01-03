@@ -1,5 +1,6 @@
 import Blogs from "./components/Blogs";
 import Banner from "./components/Banner";
+import Insights from "./components/Insights";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     <Banner title="Welcome to Abd Blog!" desc="This is where I share my thoughts, experiences, and ideas. Stay tuned
           for exciting content on a variety of topics!" button="Explore My Posts" href="/blogs" />
 <Blogs primaryBtn="Explore More"  heading="Our Top Blogs" secondaryBtn="Explore More" />
+<Insights />
    </main>
   );
 }
